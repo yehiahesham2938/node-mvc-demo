@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title MVC Example
+    link(rel="stylesheet" href="/style.css")
+  body
+    h1 Item List
+    ul
+      each item in items
+        li= item.name
+    form(action="/add" method="POST")
+      input(type="text" name="name" placeholder="Enter item" required)
+      button(type="submit") Add Item
+    script(src="/script.js")
