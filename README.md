@@ -242,7 +242,7 @@ Open **[http://localhost:3000](http://localhost:3000)**.
 - Add an item using the **form**.
 - The item will be saved in MongoDB and displayed.
 
-## **11. Summary**
+## **Summary**
 
 ✔ **Model** → Defines the `Item` schema (Mongoose).  
 ✔ **View** → Displays items & form (`index.pug`).  
