@@ -15,4 +15,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use('/', itemRoutes);
 
-app.listen(port, () => console.log(`Listening on http://localhost:${port}`));
+app.listen(port, () => console.log(`Listening on http://localhost: `, PORT));

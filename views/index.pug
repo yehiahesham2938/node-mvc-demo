@@ -7,8 +7,11 @@ html
     h1 Item List
     ul
       each item in items
-        li= item.name
+        li
+          span= item.name
+          form(action=`/delete/${item._id}` method="POST" style="display: inline; margin-left: 10px;")
+            button(type="submit") Delete
     form(action="/add" method="POST")
       input(type="text" name="name" placeholder="Enter item" required)
       button(type="submit") Add Item
-    script(src="/script.js")
+    script(src="/script.js") 
